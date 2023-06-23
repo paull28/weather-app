@@ -1,0 +1,55 @@
+  body {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    margin: 0; /* Add this to remove default margin */
+    padding: 0;
+    border: none; /* Add this line to remove the border */
+  }
+  
+section {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    align-content: center;
+    text-align: center;
+    margin:40px;
+  }
+
+.location {
+    font-size: 32px;
+    margin:10px;
+}
+
+.weather-icon {
+    font-size: 128px;
+    opacity: 75%;
+}
+.temp {
+    align-items: center;
+}
+.temp h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 48px;
+    margin-bottom: 0;;
+  }
+  
+  .small-temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+  }
+
+.small-temp p {
+    margin-top: 5px;
+}
+.sun {
+    font-size: 18px;
+    margin: 0;
+}
