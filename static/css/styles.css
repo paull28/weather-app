@@ -8,6 +8,24 @@
     border: none; /* Add this line to remove the border */
   }
   
+.sun-mode {
+  background-color: rgb(230, 173, 0);
+  background: linear-gradient(to bottom, #ebd036, #d9b800, #245195);
+
+}
+
+.cloud-mode {
+  background: linear-gradient(to bottom, #454545, #6a6a6a, #245195);
+}
+
+.rain-mode {
+  background: linear-gradient(to bottom, #2b2b2b, #535353, #455773);
+}
+
+.night-mode {
+  background: linear-gradient(to bottom, #1d1c20, #403750, #645b7a);
+}
+
 section {
     display: grid;
     justify-content: center;
@@ -24,7 +42,6 @@ section {
 
 .weather-icon {
     font-size: 128px;
-    opacity: 75%;
 }
 .temp {
     align-items: center;

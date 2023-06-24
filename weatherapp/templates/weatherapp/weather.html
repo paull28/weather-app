@@ -7,6 +7,11 @@
 {% block content %}
 <section>
     <h1>Weather</h1>
+    <button id="sun-button">Toggle Sun Mode</button>
+    <button id="cloud-button">Toggle Cloud Mode</button>
+    <button id="rain-button">Toggle Rain Mode</button>
+    <button id="night-button">Toggle Night Mode</button>
+
     <div class="weather">
         {% if weather %}
             <div class="location">
@@ -47,5 +52,31 @@
         <div>
         </div>
 </section>
+
+<script>
+    const sunbutton = document.getElementById('sun-button');
+    const cloudbutton = document.getElementById('cloud-button');
+    const rainbutton = document.getElementById('rain-button');
+    const nightbutton = document.getElementById('night-button');
+
+    sunbutton.addEventListener('click', function() {
+      const body = document.body;
+      body.classList.toggle('sun-mode');
+    });
+    cloudbutton.addEventListener('click', function() {
+      const body = document.body;
+      body.classList.toggle('cloud-mode');
+    });
+    rainbutton.addEventListener('click', function() {
+      const body = document.body;
+      body.classList.toggle('rain-mode');
+    });
+    nightbutton.addEventListener('click', function() {
+      const body = document.body;
+      body.classList.toggle('night-mode');
+    });
+
+
+  </script>
 
 {% endblock content %}
